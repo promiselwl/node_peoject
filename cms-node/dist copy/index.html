@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script src='https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.js'></script>
+  <button id="btn">点我测试</button>
+  <input type="file" name="file" id="fileIpt">
+  <!-- 模板 -->
+  <a href="/import/template">点我下载模板</a>
+  <a href="/images/coverImage/1677989170864.png">点我</a>
+
+  <script>
+    // 1.登录
+    //#region
+    // btn.addEventListener('click', async () => {
+    //   const { data } = await axios({
+    //     method: 'POST',
+    //     url: '/login',
+    //     data: {
+    //       username: '郑依韩',
+    //       password: 'zyh123456'
+    //     }
+    //   })
+    //   console.log(data)
+    // })
+    //#endregion
+
+    // 2.检查登录
+    //#region
+    // btn.addEventListener('click', async () => {
+    //   const { data } = await axios({
+    //     method: 'GET',
+    //     url: '/login/checkLogin',
+    //   })
+    //   console.log(data)
+    // })
+    //#endregion
+
+    //3.获取菜单路由
+    //#region
+    // btn.addEventListener('click', async () => {
+    //   const { data } = await axios({
+    //     method: 'GET',
+    //     url: '/data/route',
+    //   })
+    //   console.log(data)
+    // })
+    //#endregion
+
+    //4. 获取功能页面数据
+    //#region
+    // btn.addEventListener('click', async () => {
+    //   const { data } = await axios({
+    //     method: 'GET',
+    //     url: '/data',
+    //   })
+    //   console.log(data)
+    // })
+    //#endregion
+
+
+    // 5.根据条件筛选页数
+    //#region
+    // btn.addEventListener('click', async () => {
+    //   const { data } = await axios({
+    //     method: 'GET',
+    //     url: '/student/studentList',
+    //     params: {
+    //       kindName: '',
+    //       courseName: '',
+    //       className: '',
+    //       currentPage:1,
+    //       pageSize:10
+    //     }
+    //   })
+    //   console.log(data)
+    // })
+    //#endregion
+
+    //6. 获取课程分类对象
+    //#region
+    // btn.addEventListener('click', async () => {
+    //     const { data } = await axios({
+    //       method: 'GET',
+    //       url: '/student/courseObj',
+    //     })
+    //     console.log(data)
+    //   })
+    //#endregion
+
+    //7. 修改学员信息
+    //#region 
+    // btn.addEventListener('click', async () => {
+    //   const { data } = await axios({
+    //     method: 'POST',
+    //     url: '/student/reviseStudent',
+    //     data: {
+    //       phoneNumber: '18844366639',
+    //       name: '',
+    //       wechat: '',
+    //       QQ: '',
+    //       card: '',
+    //       age: '',
+    //       sex: '男',
+    //       location: ['安徽省', '亳州市'],
+    //       education: '',
+    //     }
+    //   })
+    //   console.log(data)
+    // })
+    //#endregion
+
+    // 8.修改班期
+    //#region 
+    // btn.addEventListener('click', async () => {
+    //   const { data } = await axios({
+    //     method: 'POST',
+    //     url: '/student/reviseStudentClass',
+    //     data: {
+    //       className: 'web-前端进阶框架-丸子',
+    //       phoneNumber: '18844366639',
+    //     }
+    //   })
+    //   console.log(data)
+    // })
+    //#endregion
+
+    // 9.修改课程是否启用
+    //#region 
+    // btn.addEventListener('click', async () => {
+    //   const { data } = await axios({
+    //     method: 'POST',
+    //     url: '/student/reviseIsEnable',
+    //     data: {
+    //       isEnable: true,
+    //       phoneNumber: '18844366639',
+    //     }
+    //   })
+    //   console.log(data)
+    // })
+    //#endregion
+
+    //10. 导入文件接口
+    //#region 
+    // btn.addEventListener('click', async () => {
+    //   let formData = new FormData() //储存文件信息
+    //   console.log(fileIpt.files);
+    //   formData.append(fileIpt.name, fileIpt.files[0])
+    //   const { data } = await axios({
+    //     method: 'POST',
+    //     url: '/import/student',
+    //     data: formData
+    //   })
+    //   console.log(data);
+    // })
+    //#endregion
+
+    // 3.返回导入列表数据
+    //#region 
+    // btn.addEventListener('click', async () => {
+    //   const { data } = await axios({
+    //     method: 'GET',
+    //     url: '/import/importList',
+    //     params: {
+    //       currentPage: 1,
+    //       pageSize: 10
+    //     }
+
+    //   })
+    //   console.log(data);
+    // })
+    //#endregion
+
+    // 获取课程列表
+    // #region 
+    // btn.addEventListener('click', async () => {
+    //   const { data } = await axios({
+    //     method: 'GET',
+    //     url: '/course/courseList',
+    //     params: {
+    //       kindName:'前端',
+    //       currentPage: 1,
+    //       pageSize: 10
+    //     }
+
+    //   })
+    //   console.log(data);
+    // })
+    //#endregion
+
+
+    // 修改课程基础信息
+    //#region 
+    // btn.addEventListener('click', async () => {
+    //   const { data } = await axios({
+    //     method: 'POST',
+    //     url: '/course/reviseCourseBase',
+    //     data: { courseName: '日语初级班', downPrice: 2100, originalPrice: 2180, sellingPrice: 2180 }
+    //   })
+    //   console.log(data);
+    // })
+    //#endregion
+
+
+    // 修改课程封面接口
+    //#region 
+    // btn.addEventListener('click', async () => {
+    //   let formData = new FormData()
+    //   formData.append(fileIpt.name, fileIpt.files[0])
+    //   // 课程名称 
+    //   formData.append("courseName", '角色原画进阶班')
+    //   // 课程描述 
+    //   formData.append("description", '这是角色原画进阶班哈')
+    //   const { data } = await axios({
+    //     method: 'POST',
+    //     url: '/course/reviseCourseCover',
+    //     data: formData
+    //   })
+    //   console.log(data);
+
+    // })
+    //#endregion
+
+
+
+    // 新增直播
+    //#region 
+    // btn.addEventListener('click', async () => {
+    //   const { data } = await axios({
+    //     method: 'POST',
+    //     url: '/live/addLive',
+    //     data: {
+    //       // 直播标题 
+    //       liveName: "16 vue-vuex",
+    //       // 直播时长
+    //       liveDuration: 120,
+    //       // 直播讲师
+    //       teacher: '朱雀',
+    //       // 直播时间
+    //       liveTime: Date.now() / 1 + 100 * 60 * 60 * 24 * 10,
+    //       courseName: "web前端全栈进阶班",
+    //       className: "web-前端进阶框架-朱雀",
+    //       _id: "64054d35c0d01a21ff81450d" 
+    //     }
+    //   })
+    //   console.log(data);
+    // })
+    //#endregion
+
+    // 删除直播
+    //#region 
+    // btn.addEventListener('click', async () => {
+    //   const { data } = await axios({
+    //     method: 'POST',
+    //     url: '/live/deleteLive',
+    //     data: {
+    //       _id: "64054d35c0d01a21ff81450d",
+    //       id:'64058579b404c40fc9ef6ad7'
+    //     }
+    //   })
+    //   console.log(data);
+    // })
+    //#endregion
+
+
+    // 修改直播
+    // btn.addEventListener('click', async () => {
+    //   const { data } = await axios({
+    //     method: 'POST',
+    //     url: '/live/reviseLive',
+    //     data: {
+    //       // 直播标题 
+    //       liveName: '15 vue-router',
+    //       // 直播时长
+    //       liveDuration: 130,
+    //       // 直播讲师
+    //       teacher: '朱雀',
+    //       // 直播时间
+    //       liveTime: Date.now() / 1 + 100 * 60 * 60 * 24 * 10,
+    //       _id: "64054d35c0d01a21ff81450d",
+    //       id: '64054d35c0d01a21ff81451c'
+    //     }
+    //   })
+    //   console.log(data);
+    // })
+
+
+    //新增文章
+    // btn.addEventListener('click', async () => {
+    //   const { data } = await axios({
+    //     method: 'POST',
+    //     url: '/article/addArticle',
+    //     data: {
+    //       title: '翠花的一天',
+    //       description: '翠花18岁的平凡的一天',
+    //       content: '此处省略四万字'
+    //     }
+    //   })
+    //   console.log(data);
+    // }) 
+
+
+    // 文章列表数据获取
+    // btn.addEventListener('click', async () => {
+    //   const { data } = await axios({
+    //     method: 'GET',
+    //     url: '/article/articleList',
+    //     params: {
+    //       currentPage: 1,
+    //       pageSize: 2,
+    //     }
+
+    //   })
+    //   console.log(data);
+    // }) 
+
+    // // 获取文章排名
+    // btn.addEventListener('click', async () => {
+    //   const { data } = await axios({
+    //     method: 'POST',
+    //     url: '/article/reviseRank',
+    //     data: {
+    //       man: {
+    //         _id: '6407f101226abd721e77f24a',
+    //         rank: 1
+    //       },
+    //       woman: {
+    //         _id: '6407f1fb6dd1d357c8516fa0',
+    //         rank: 2
+    //       },
+    //     }
+    //   })
+    //   console.log(data);
+    // }) 
+
+
+    // 删除文章
+    btn.addEventListener('click', async () => {
+      const { data } = await axios({
+        method: 'POST',
+        url: '/article/deleteArticle',
+        data: {
+          // 被删除项的id
+          _id: '6407f101226abd721e77f24a'
+        }
+      })
+      console.log(data);
+    }) 
+  </script>
+</body>
+
+</html>

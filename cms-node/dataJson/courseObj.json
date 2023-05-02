@@ -1,0 +1,67 @@
+{
+    "kindName": [
+      {
+        "value": "前端",
+        "courseName": [
+          {
+            "value": "web前端基础班",
+            "className": ["三十七期javacript", "三十九期javacript"]
+          },
+          {
+            "value": "web前端全栈进阶班",
+            "className": [
+              "web-前端进阶框架-朱雀",
+              "web-前端进阶框架-cherry",
+              "web-前端进阶框架-丸子"
+            ]
+          }
+        ]
+      },
+      {
+        "value": "后端",
+        "courseName": [
+          {
+            "value": "Python基础核心语法",
+            "className": [
+              "55期开发基础班",
+              "53期开发基础班",
+              "52期开发基础班",
+              "51期开发基础班"
+            ]
+          },
+          {
+            "value": "Python全栈开发",
+            "className": ["6-7全栈开发班", "4-28全栈开发班", "3-17全栈开发班"]
+          }
+        ]
+      }
+    ],
+    "courseName": [
+      {
+        "value": "Python基础核心语法",
+        "className": [
+          "55期开发基础班",
+          "53期开发基础班",
+          "52期开发基础班",
+          "51期开发基础班"
+        ]
+      },
+      {
+        "value": "Python全栈开发",
+        "className": ["6-7全栈开发班", "4-28全栈开发班", "3-17全栈开发班"]
+      },
+      {
+        "value": "web前端基础班",
+        "className": ["三十七期javacript", "三十九期javacript"]
+      },
+      {
+        "value": "web前端全栈进阶班",
+        "className": [
+          "web-前端进阶框架-朱雀",
+          "web-前端进阶框架-cherry ",
+          "web-前端进阶框架-丸子"
+        ]
+      }
+    ]
+  }
+  

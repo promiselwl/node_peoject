@@ -1,0 +1,65 @@
+[
+    {
+      "path": "/profile",
+      "title": "个人中心",
+      "icon": "user",
+      "children": []
+    },
+    {
+      "path": "/student",
+      "title": "学员",
+      "icon": "personnel",
+      "children": [
+        {
+          "path": "/student/studentManage",
+          "title": "学员管理",
+          "icon": "personnel-manage"
+        },
+        {
+          "path": "/student/import",
+          "title": "导入学员",
+          "icon": "introduce"
+        }
+      ]
+    },
+    {
+      "path": "/course",
+      "title": "课程",
+      "icon": "role",
+      "children": [
+        {
+          "path": "/course/courseManage",
+          "title": "课程管理",
+          "icon": "personnel-info"
+        },
+        {
+          "path": "/course/classManage",
+          "title": "班期管理",
+          "icon": "link"
+        },
+        {
+          "path": "/course/live",
+          "title": "我的直播",
+          "icon": "reward"
+        }
+      ]
+    },
+    {
+      "path": "/article",
+      "title": "文章",
+      "icon": "article",
+      "children": [
+        {
+          "path": "/article/ranking",
+          "title": "文章排名",
+          "icon": "article-ranking"
+        },
+        {
+          "path": "/article/create",
+          "title": "创建文章",
+          "icon": "article-create"
+        }
+      ]
+    }
+  ]
+  
